@@ -1,5 +1,6 @@
 "use strict";
 
+// console.log("on");
 var numb1;
 var currnumb = 0, operator, opcheck = false;
 
@@ -59,16 +60,15 @@ mult.addEventListener('click',
   });
 
 minus = document.getElementById('minus');
-minus.addEventListener('click',
-  function () {
-    if (currnumb != undefined) {
-      numb1 = currnumb;
-      currnumb = 0;
-      operator = '-';
-      opcheck = true;
-    }
-    text.innerText = "";
-  });
+minus.addEventListener('click', function () {
+  if (currnumb != undefined) {
+    numb1 = currnumb;
+    currnumb = 0;
+    operator = '-';
+    opcheck = true;
+  }
+  text.innerText = "";
+});
 
 add = document.getElementById('add');
 
